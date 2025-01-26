@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3DS Gateshark/CTRPF disassembler</title>
+<meta charset="utf-8">
+</head>
+<textarea id="inputCodes" style="width: 500px; height: 400px;" placeholder="Enter codes here">D3000002 30000000
+70055880 00000004
+DD000000 00000100
+20055880 00000002
+D0000000 00000000</textarea>
+<input type="radio" name="console" value="nds" id="nds" checked><label for="nds">DS</label>
+<input type="radio" name="console" value="3ds" id="3ds"><label for="3ds">3DS</label>
+<button id="decodeButton">Decode</button>
+<pre id="output"></pre>
+[] = means "value at" eg. [0100] would correspond to the value stored at addres 0x0100
+<br>
+offset, stored and data can be numbered 1 or 2 as there are two of each. if there is no number, it refers to the currently active one.
+<br>
+~ and & refer to bitwise operations
+<br>
+http://doc.kodewerx.org/hacking_nds.html
+<br>
+http://uk.codejunkies.com/support_downloads/trainer-toolkit-for-nintendo-ds-user-manual.pdf
+<br>
+https://problemkaputt.de/gbatek.htm#dscartcheatactionreplayds
+<br>
+https://gitlab.com/thepixellizeross/ctrpluginframework/-/blob/develop/Assets/ARCodesTypes.txt
+<br>
+https://github.com/LumaTeam/Luma3DS/blob/master/sysmodules/rosalina/source/menus/cheats.c
+<br>
+https://github.com/phecdaDia/NTRClient/wiki/Gateshark
+<br>
+https://web.archive.org/web/20180306021206/https://www.maxconsole.com/threads/gateway-arcode-cheat-sheet.40381/
+<br>
+https://gitlab.com/thepixellizeross/ctrpluginframework/-/blob/develop/Library/source/CTRPluginFrameworkImpl/ActionReplay/ARHandler.cpp
+<script src="actionreplaydisassembler.js"></script>
+</body>
+</html>
